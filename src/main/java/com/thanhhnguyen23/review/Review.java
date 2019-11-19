@@ -1,18 +1,13 @@
 package com.thanhhnguyen23.review;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.thanhhnguyen23.course.core.BaseEntity;
 
-public class Review {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private final Long id;
+public class Review extends BaseEntity {
     private int rating;
     private String description;
     
     protected Review(){
-        id = null;
+        super();
     }
 
     public int getRating() {

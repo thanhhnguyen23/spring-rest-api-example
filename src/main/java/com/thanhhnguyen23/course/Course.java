@@ -1,21 +1,17 @@
 package com.thanhhnguyen23.course;
 
+import com.thanhhnguyen23.course.core.BaseEntity;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Entity
-public class Course {
+public class Course extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private final Long id;
     private String title;
     private String url;
 
     protected Course(){
-        id = null;
+        super();
     }
 
     public Course(String title, String url) {
