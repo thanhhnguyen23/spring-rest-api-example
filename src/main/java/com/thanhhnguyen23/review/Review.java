@@ -2,6 +2,9 @@ package com.thanhhnguyen23.review;
 
 import com.thanhhnguyen23.course.core.BaseEntity;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Review extends BaseEntity {
     private int rating;
     private String description;
