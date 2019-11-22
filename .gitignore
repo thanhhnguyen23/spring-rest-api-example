@@ -96,7 +96,7 @@ RemoteSystemsTempFiles/
 .worksheet 
 
 # .properties files
-*.properties
+# *.properties
 
 # package-lock.json
 package-lock.json
